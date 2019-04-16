@@ -1,0 +1,26 @@
+# mac
+.DS_Store
+
+# win
+Thumb.db
+Desktop.ini
+
+# node
+node_modules/
+build/
+obj/
+Debug/
+bin/
+
+# cordova
+/platforms
+/plugins
+
+# general
+*.log
+*.tmp
+resources/signing
+.vs
+.vscode
+*~
+*.sw[po]
