@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:build": "cd companion && npm run build && cd ..",
     "dev:electron": "npm run dev:build && cordova run electron --nobuild",
-    "dev:browser": "npm run dev:build && cordova run browser"
+    "dev:browser": "npm run dev:build && cordova run browser",
+    "postinstall": "cd companion && yarn && cd .."
   },
   "keywords": [
     "ecosystem:cordova"
