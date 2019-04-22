@@ -15,12 +15,17 @@ bin/
 # cordova
 /platforms
 /plugins
+/dist
+/www
 
 # general
+.sass-cache/
+/tmp
+/coverage
 *.log
 *.tmp
 resources/signing
 .vs
 .vscode
 *~
-*.sw[po]
+*.sw[mnpcod]

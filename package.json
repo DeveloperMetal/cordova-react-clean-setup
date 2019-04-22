@@ -1,24 +1,26 @@
 {
-  "name": "helloworld",
-  "displayName": "HelloCordova",
+  "name": "bloomstack-companion-app",
+  "displayName": "Bloomstack",
   "version": "1.0.0",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "description": "Companion app for the Bloomstack platform.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:electron": "cordova run electron --nobuild",
-    "dev:browser": "cordova run browser"
+    "dev:build": "cd companion && npm run build && cd ..",
+    "dev:electron": "npm run dev:build && cordova run electron --nobuild",
+    "dev:browser": "npm run dev:build && cordova run browser"
   },
   "keywords": [
     "ecosystem:cordova"
   ],
-  "author": "Apache Cordova Team",
+  "author": "Bloomstack, Inc.",
   "license": "Apache-2.0",
   "dependencies": {
     "cordova-browser": "^6.0.0",
     "cordova-electron": "^1.0.2"
   },
   "devDependencies": {
+    "clean-webpack-plugin": "^2.0.1",
     "cordova-plugin-whitelist": "^1.3.3"
   },
   "cordova": {
