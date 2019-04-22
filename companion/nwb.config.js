@@ -13,7 +13,8 @@ module.exports = {
     },
     extra: {
       output: {
-        path: path.resolve('../www/')
+        path: path.resolve('../www/'),
+        publicPath: ""
       },
       plugins: [
         new HtmlWebpackPlugin({
