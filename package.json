@@ -9,7 +9,7 @@
     "dev:build": "cd companion && npm run build && cd ..",
     "dev:electron": "npm run dev:build && cordova run electron --nobuild",
     "dev:browser": "npm run dev:build && cordova run browser",
-    "dev:ios": "npm run dev:build && cordova emulate ios",
+    "dev:ios": "npm run dev:build && cordova run ios",
     "postinstall": "cd companion && yarn && cd .."
   },
   "keywords": [
