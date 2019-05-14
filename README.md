@@ -44,7 +44,7 @@ cordova requirements
 
 ### IOS
 
-You'll need to install xcode and xcode command tools. After you install xcode from the appstore (and open it once! very important for fetching updated packages) run:
+You'll need MacOS due to xcode dependency, to install xcode and xcode command tools. After you install xcode from the appstore (and open it once! very important for fetching updated packages) run:
 
 ```bash
 xcode-select --install
@@ -58,6 +58,14 @@ sudo npm install -g ios-deploy
 ```
 
 For more info about ios setup see the [cordova ios guide](https://cordova.apache.org/docs/en/5.1.1/guide/platforms/ios/index.html)
+
+### Android 
+
+TODO
+
+### Desktop
+
+TODO
 
 #### Building
 
@@ -89,16 +97,3 @@ The --target parameter is passed to the cordova cli tool. Therefore, you can app
 
 The dev:ios script does two things. Compiles the companion subproject and outputs its packaged files into /www/ for cordova and runs the cordova compiler on these new files. After compilation is done the simulator is started.
 
-## Building
-
-Browser builds
-```bash
-yarn dev:browser
-```
-
-Electron builds
-```bash
-yarn dev:electron
-```
-
-More platforms to come as we are figuring out a build process to test on multiple physical devices.
