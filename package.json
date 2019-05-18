@@ -18,6 +18,7 @@
   "author": "Bloomstack, Inc.",
   "license": "Apache-2.0",
   "dependencies": {
+    "cordova-android": "^8.0.0",
     "cordova-browser": "^6.0.0",
     "cordova-electron": "^1.0.2",
     "cordova-ios": "^5.0.1"
@@ -33,7 +34,8 @@
     "platforms": [
       "browser",
       "electron",
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }

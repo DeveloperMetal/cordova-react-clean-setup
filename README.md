@@ -61,7 +61,51 @@ For more info about ios setup see the [cordova ios guide](https://cordova.apache
 
 ### Android 
 
-TODO
+Install Android SDK specifically Android Studio which should install the latest JDK for you if not install it from the link below. 
+
+You can install jdk yourself from [here.](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) As of writing JDK 8 is the version Cordova was the targetJA
+
+You'll also need to [install gradle for your platform](https://gradle.org/install/#prerequisites)
+
+Then make sure you have the following packages installed in Android Studio(Tools > SDK Manager) or in the sdkmanager cli tool:
+
+1) Android Platform sdk for the target you want
+2) Android SDK build-tools >= 19.1.0
+3) Android support repo found under SDK tools tab
+
+Then finally make sure you have all environment variables setup:
+
+1) JAVA_HOME points to your copy of JDK path.
+2) ANDROID_HOME points to the Android SDK installation.
+3) Add ```tools```, ```tools/bin```, and ```platform-tools``` android sdk paths to your PATH.
+4) During the gradle installation you should have appended gradle to your path as well.
+
+Depending on the platform you develop on this can be done in a few ways:
+
+#### Windows
+
+Search > Envirmental Variables and just add them to System Variables and append to the PATH variable
+
+You'll need to set JAVA_HOME, ANDROID_HOME and append to the PATH variable as stated above
+
+#### OSX and Linux
+
+You can edit your .bash_profile file and export and append your PATH your varialble/s:
+
+```bash
+export JAVA_HOME=/path/to/jdk
+export ANDROID_HOME=/path/to/android/sdk
+export PATH=${PATH}:/${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools
+```
+
+Then reload your bash profile
+
+```bash
+$ source ~/.bash_profile
+```
+
+
+
 
 ### Desktop
 
